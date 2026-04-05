@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "warehouse-robot-ai"
+version = "1.0.0"
+description = "Warehouse Robot AI - Search and Planning Project"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.21.0",
+    "torch>=1.10.0",
+    "pyyaml>=5.4.0",
+    "mlflow>=1.20.0",
+    "pytest>=6.2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.2.0",
+    "black>=21.0",
+    "flake8>=3.9.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"

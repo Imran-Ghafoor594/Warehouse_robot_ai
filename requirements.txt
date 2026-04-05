@@ -1,0 +1,6 @@
+# Python 3.10+ compatible packages
+numpy<2.0
+pyyaml>=6.0
+mlflow>=2.3.0
+pytest>=7.4.0
+matplotlib>=3.7.0 
